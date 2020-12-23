@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/imv_movie_view_bgr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <VideoView
+        android:id="@+id/video_film_player"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/video_film_player"
+        android:background="#80000000">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <RelativeLayout
+                android:id="@+id/rlv_general_info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_movie_banner_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp">
+
+                    <ImageView
+                        android:id="@+id/imv_movie_poster"
+                        android:layout_width="144dp"
+                        android:layout_height="230dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/cardview_movie_banner_container"
+                    android:layout_marginLeft="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_film_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:text="Title"
+                        android:textColor="#ff5722" />
+
+                    <RelativeLayout
+                        android:id="@+id/rl_movie_length_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/tv_film_title">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Thời lượng"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_movie_length"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="100dp"
+                            android:text="x phút"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_movie_director_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/rl_movie_length_container">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Đạo diễn"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_movie_director"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="100dp"
+                            android:text="Someone"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_country_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/rl_movie_director_container">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Quốc gia"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="100dp"
+                            android:text="En"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_release_time_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/rl_country_container">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Phát hành"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_release_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="100dp"
+                            android:text="12/13/2014"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_actor_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/rl_release_time_container">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30dp"
+                            android:text="Diễn viên"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_actor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="100dp"
+                            android:text="Anh A, Chị B, Cô C, Bà D"
+                            android:textColor="#ffffff" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_film_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Nội dung"
+                android:layout_below="@+id/rlv_general_info_container"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_film_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Nội dung"
+                android:lineSpacingExtra="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/tv_film_description_title"
+                android:layout_marginHorizontal="20dp"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
