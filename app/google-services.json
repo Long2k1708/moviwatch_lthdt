@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "369158293313",
+    "firebase_url": "https://moviwatch-864cd-default-rtdb.firebaseio.com",
+    "project_id": "moviwatch-864cd",
+    "storage_bucket": "moviwatch-864cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369158293313:android:554e7330966cb8fd8d03c0",
+        "android_client_info": {
+          "package_name": "com.princefrog2k.lthdt.moviwatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369158293313-2587tm504lfnvm0v6e1e5k1ljjsil3td.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.princefrog2k.lthdt.moviwatch",
+            "certificate_hash": "bf5179b876ffe171ebc04dd9148f824750a5cf23"
+          }
+        },
+        {
+          "client_id": "369158293313-truf46vghabpfjhp31t4devcrp70p7a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2qfheT4tkIcTC3ONfIPH6plh0-vYG3Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369158293313-truf46vghabpfjhp31t4devcrp70p7a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
